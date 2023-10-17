@@ -9,7 +9,7 @@
 
 While this seems rather inefficient, the performance of `broadband` quickly tops multiple TCP connections as you add more and more clients.
 
-Suppose, for instance, that you need to deploy a 100 GB image to 100 machines connected to a server via Ethernet. Suppose also that due to various limitations, the server is connected to the network by 10 Gigabit Ethernet, and the packet loss rate is generous 0.1% on each link.
+Suppose, for instance, that you need to deploy a 100 GB image to 100 machines connected to a server via Ethernet. Suppose also that due to various limitations, the server is connected to the network by 10 Gigabit Ethernet, and the packet loss rate is a generous 1% on each link.
 
 With a normal TCP connection, performance decreases linearly: the 100 machines split the connection 100 ways, resulting in an effective 100 Megabit connection per machine. Accounting for packet loss we still get around 100 Mbps, so deployment will take 8000 seconds, or around 2 hours.
 
